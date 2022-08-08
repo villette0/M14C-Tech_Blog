@@ -22,13 +22,20 @@ Comment.init(
       allowNull: false,
       defaultValue: DataTypes.NOW,
     },
-    username: {
-      type: DataTypes.STRING,
+    user_id: {
+      type: DataTypes.INTEGER,
       references: {
         model: 'user',
-        key: 'username',
+        key: 'id',
       },
     },
+    post_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'post',
+        key: 'id',
+      }
+    }
   },
   {
     sequelize,

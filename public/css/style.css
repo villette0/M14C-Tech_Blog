@@ -1,0 +1,23 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  text-align: center;
+}
+
+nav li {
+  display: inline;
+}
+
+.all-posts-container {
+  border: 3px solid gray;
+  border-radius: 3px;
+  margin: 20px 90px;
+  padding: 10px 30px;
+}
+
+.created-by {
+  margin-top: -10px;
+  font-size: 14px;
+}
