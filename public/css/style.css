@@ -10,7 +10,7 @@ nav li {
   display: inline;
 }
 
-.all-posts-container {
+.post-container {
   border: 3px solid gray;
   border-radius: 3px;
   margin: 20px 90px;
@@ -21,3 +21,30 @@ nav li {
   margin-top: -10px;
   font-size: 14px;
 }
+
+.login-page h2 {
+  text-align: center;
+}
+
+.section-div {
+  margin: 0px 60vh 50px 60vh;
+}
+
+.form-group p {
+  margin-bottom: 1px;
+}
+
+.form-group input{
+  margin-bottom: 10px;
+  width: 240px;
+}
+
+
+.button-div {
+  text-align: center;
+}
+
+.login-to-comment {
+  text-align: center;
+}
+
