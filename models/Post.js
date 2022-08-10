@@ -31,14 +31,6 @@ Post.init(
       references: {
         model: 'user',
         key: 'id',
-      },
-    },
-    // Is this what I would put here to get comments to show?
-    comment_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'comment',
-        key: 'id',
       }
     }
   },
