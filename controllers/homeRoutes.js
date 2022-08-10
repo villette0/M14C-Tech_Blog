@@ -68,11 +68,10 @@ router.get('/post/:id', async (req, res) => {
             ],
         });
 
-        // Serialize data so the template can read it
-        const posts = postData.map((post) => post.get({ plain: true }));
+        const post = postData.get({ plain: true });
 
         res.render('single-post', {
-            ...posts,
+            ...post,
             logged_in: req.session.logged_in
         });
     } catch (err) {
@@ -90,10 +89,10 @@ router.get('/dashboard', withAuth, async (req, res) => {
             include: [{ model: Post }, { model: Comment }],
         });
 
-        const users = userData.map((user) => user.get({ plain: true }));
+        const user = userData.get({ plain: true });
 
         res.render('dashboard', {
-            ...users,
+            ...user,
             logged_in: true
         });
     } catch (err) {
@@ -104,7 +103,7 @@ router.get('/dashboard', withAuth, async (req, res) => {
 router.get('/login', (req, res) => {
     // If the user is already logged in, redirect the request to another route
     if (req.session.logged_in) {
-        res.redirect('/profile');
+        res.redirect('/dahsboard');
         return;
     }
 
