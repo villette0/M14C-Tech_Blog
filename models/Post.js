@@ -1,4 +1,5 @@
-// post title, contents, post creator’s username, and date created
+// post title, contents, post creator’s username, and date created.
+// post belongs to a user.
 
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');

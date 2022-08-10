@@ -1,4 +1,5 @@
-// comment, the comment creator’s username, and the date created
+// the comment, the comment creator’s username, and the date created.
+// comment belongs to a post and user.
 
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');

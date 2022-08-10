@@ -55,6 +55,7 @@ router.get('/all-posts', async (req, res) => {
 
 router.get('/post/:id', async (req, res) => {
     try {
+        // Get one post, and include the username and comments connected to it.
         const postData = await Post.findByPk(req.params.id, {
             include: [
                 {
@@ -80,13 +81,14 @@ router.get('/post/:id', async (req, res) => {
 });
 
 
-// Use withAuth middleware to prevent access to route
+// Use withAuth middleware to prevent access to route  - only if logged in
 router.get('/dashboard', withAuth, async (req, res) => {
     try {
         // Find the logged in user based on the session ID
         const userData = await User.findByPk(req.session.user_id, {
             attributes: { exclude: ['password'] },
-            include: [{ model: Post }, { model: Comment }],
+            // also get the posts the user has made to be displayed on dashboard
+            include: [{ model: Post }],
         });
 
         const user = userData.get({ plain: true });
