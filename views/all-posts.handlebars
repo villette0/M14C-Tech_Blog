@@ -1,16 +1,8 @@
 <!-- Loop over each object in the posts array -->
 {{#each posts as |post| }}
 <div class="post-container">
-  <div>
-    <h2>
-      <a href="/post/{{post.id}}">{{post.title}}</a>
-    </h2>
-    <p class="created-by">Created by {{post.user.username}} on {{format_date post.date_created}}</p>
-  </div>
-  <div>
-    <p>
-      {{post.contents}}
-    </p>
-  </div>
+    <h2><a href="/post/{{post.id}}">{{post.title}}</a></h2>
+    <h3>Created by {{post.user.username}} on {{format_date post.date_created}}</h3>
+    <p>{{post.contents}}</p>
 </div>
 {{/each}}

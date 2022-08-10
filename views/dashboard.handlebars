@@ -5,3 +5,23 @@ WHEN I click on the button to create a new blog post
 THEN the title and contents of my post are saved and I am taken back to an updated dashboard with my new blog post
 WHEN I click on one of my existing posts in the dashboard
 THEN I am able to delete or update my post and taken back to an updated dashboard --}}
+{{#if logged_in}}
+<!-- Loop over each object in the posts array -->
+{{#each posts as |post| }}
+<div class="post-container">
+    <h2><a href="/post/{{post.id}}">{{post.title}}</a></h2>
+    <h3>Created on {{format_date post.date_created}}</h3>
+    <p>{{post.contents}}</p>
+    <button>Edit post</button>
+</div>
+{{/each}}
+<button>New post</button>
+
+
+
+{{else}}
+<p class="login-to-comment">Login to view dashboard</p>
+<div class="button-div">
+    <button onclick="window.location.href='/login';">login</button>
+</div>
+{{/if}}
