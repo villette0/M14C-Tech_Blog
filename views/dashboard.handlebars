@@ -12,8 +12,8 @@
     <h2>{{post.title}}</h2>
     <h3>Created on {{format_date post.date_created}}</h3>
     <p>{{post.contents}}</p>
-    <button>edit</button>
-    <button>delete</button>
+    <button data-id="{{post.id}}">edit</button>
+    <button data-id="{{post.id}}">delete</button>
 </div>
 {{/each}}
 <div class="button-div">
