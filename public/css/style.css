@@ -104,3 +104,20 @@ nav li a {
   height: 100px;
   margin-bottom: 10px;
 }
+
+.new-post-container {
+  text-align: center;
+}
+
+#post-title-input {
+  width: 200px;
+}
+
+#post-contents-input {
+  height: 200px;
+  width: 400px;
+}
+
+#create-button {
+  margin-top: 30px;
+}
