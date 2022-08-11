@@ -113,11 +113,19 @@ nav li a {
   width: 200px;
 }
 
-#post-contents-input {
+#post-contents-input{
   height: 200px;
   width: 400px;
 }
 
-#create-button {
+.submitting-button {
   margin-top: 30px;
+}
+
+.edit-post-form {
+  text-align: center;
+}
+
+.two-buttons {
+  display: inline-flex;
 }
