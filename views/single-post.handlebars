@@ -10,8 +10,7 @@
     {{!view all of the post's comments --}}
     {{#if comments.length}}
     {{#each comments as |comment|}}
-    {{!-- Username and date created aren't showing up --}}
-    <p>{{comment.comment}} by {{user.username}} on {{comment.date_created}}</p>
+    <p>{{comment.comment}} by {{comment.user.username}} on {{format_date comment.date_created}}</p>
     {{/each}}
     </div>
     {{/if}}

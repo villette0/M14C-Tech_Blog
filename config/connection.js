@@ -14,9 +14,9 @@ if (process.env.JAWSDB_URL) {
       host: 'localhost',
       dialect: 'mysql',
       //needed for windows
-      //port: 3306
+      port: 3306
        // needed for mac only
-      port: "/tmp/mysql.sock",
+      //port: "/tmp/mysql.sock",
     }
   );
 }

@@ -14,6 +14,17 @@ router.get('/', async (req, res) => {
   }
   )
 
+  router.get('/:id', async (req, res) => {
+    try {
+      const commentData = await Comment.findByPk(req.params.id,{})
+      res.status(200).json(commentData);
+    }
+    catch (err) {
+      res.status(404).json(err);
+    }
+  }
+  )
+
 router.post('/', withAuth, async (req, res) => {
   try {
     const newComment = await Comment.create({
