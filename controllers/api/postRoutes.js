@@ -41,7 +41,9 @@ router.post('/', withAuth, async (req, res) => {
 router.put('/:id', async (req, res) => {
   try {
     const newPost = await Post.update({
-      ...req.body
+      ...req.body,
+      // is this where i should put this
+      user_id: req.session.user_id,
     }, 
     {
       where: {
