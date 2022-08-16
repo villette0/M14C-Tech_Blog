@@ -1,10 +1,10 @@
 # Tech Blog
 
 ## Application Description
-
+This full-stack website is a tech blog. All who visit the site are able to see posts and comments on the home page. To post or comment a user must sign in. Users can either login or sign up with a username, email, and password. Upon signing in, they can see they dashboard where they can add a new post or edit or delete an existing one and be brought back to a refreshed dashboard. They can also comment on posts once logged in. 
 
 ## Challenge Description
-
+I began this challenge by creating a database, seed data, and models for mysql. I then tested backend api get/post/put/delete routes in insomnia. I then created routes for rendering the front end webpages via handlebars. Finally I connected the handlebar html pages to public JavaScript files for button handling and css styling which were able to be viewed on localhost and are deployed to Heroku. 
 
 ## User Story
 
@@ -54,9 +54,18 @@ THEN I am able to view comments but I am prompted to log in again before I can a
 
 ## Tasks Completed
 The JavaScript documents include:
-* 
-* node modules such as 
+* api routes for post/get/put/delete, webpage rendering routes for use with handlebars, event listeners for each generated pages button functions
+* node modules such as bcrypt, connect-session-sequelize, dotenv, express, express-handlebars, express-session, mysql2, nodemon, sequelize
+* models for mysql table data
 * comments
+
+The Handlebars documents include:
+* data rendered to html pages from the homeroutes
+* for each arrays for dynamically rendered data, such as displaying newly added posts and comments
+* if statements to display content or options only if a user is logged in
+
+The JSON documents include:
+* seed data for users, posts, and comments
 
 
 ## Languages
