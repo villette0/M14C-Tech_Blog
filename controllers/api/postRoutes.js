@@ -25,6 +25,7 @@ router.get('/', async (req, res) => {
   }
   )
 
+
 router.post('/', withAuth, async (req, res) => {
   try {
     const newPost = await Post.create({
@@ -38,12 +39,10 @@ router.post('/', withAuth, async (req, res) => {
   }
 });
 
-router.put('/:id', async (req, res) => {
+router.put('/:id', withAuth, async (req, res) => {
   try {
     const newPost = await Post.update({
       ...req.body,
-      // is this where i should put this
-      user_id: req.session.user_id,
     }, 
     {
       where: {

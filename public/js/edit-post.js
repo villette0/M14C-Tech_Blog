@@ -6,7 +6,6 @@ const newPostHandler = async (event) => {
     const postId = document.querySelector('.edit-post-form').getAttribute('data-post-id');
   
     if (title  && contents) {
-      console.log(postId);
       const response = await fetch(`/api/posts/${postId}`, {
         method: 'PUT',
         body: JSON.stringify({ title, contents }),
