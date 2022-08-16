@@ -6,12 +6,15 @@
     <h3>Created on {{format_date post.date_created}}</h3>
     <p>{{post.contents}}</p>
     <div class="two-buttons">
+
     <div class="edit-button">
     <button onclick="window.location.href='/edit-post/{{post.id}}';">edit</button>
     </div>
+
     <div class="delete-button">
     <button data-id="{{post.id}}">delete</button>
     </div>
+
     </div>
 </div>
 {{/each}}
@@ -19,4 +22,4 @@
 <button onclick="window.location.href='/new-post';">New post</button>
 </div>
 
-<script src="./js/dashboard.js"></script>
+<script src="../js/dashboard.js"></script>
