@@ -1,5 +1,4 @@
 const delButtonHandler = async (event) => {
- //  console.log("hello")
   if (event.target.hasAttribute('data-id')) {
     const id = event.target.getAttribute('data-id');
 
@@ -10,10 +9,13 @@ const delButtonHandler = async (event) => {
     if (response.ok) {
       document.location.replace('/dashboard');
     } else {
-      alert('Failed to delete post');
+      alert('Failed to delete project');
     }
   }
 };
 
-document.querySelector('.delete-button').addEventListener('click', delButtonHandler);
+const delButton = document.querySelector('.delete-button')
 
+if (delButton) {
+document.addEventListener('click', delButtonHandler);
+}
