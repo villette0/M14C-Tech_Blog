@@ -84,7 +84,7 @@ The JSON documents include:
 
 * [Repository](https://github.com/villettec/M14C-Tech_Blog)
 
-## Screenshots
+## Screenshots)
 ![image](./assets/images/readme-screenshot.png)
 
 ## Credit

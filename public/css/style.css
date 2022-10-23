@@ -1,5 +1,6 @@
 body {
-  background-image: url('bg.png');
+  /* Must be in public folder, not assets when there are both public and server sides */
+  background-image: url('../images/bg.png');
   background-size: cover;
   font-family: 'Open Sans', sans-serif;
   font-weight: 200;
@@ -13,8 +14,11 @@ main {
 header {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
   color: white;
+}
+
+header h1 {
+  font-weight: 200;
 }
 
 .my-posts {
@@ -27,6 +31,7 @@ text-decoration: none;
 
 nav li {
   display: inline;
+  font-weight: 400;
 }
 
 nav li a {
