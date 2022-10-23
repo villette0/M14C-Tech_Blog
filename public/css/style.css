@@ -1,9 +1,28 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('bg.jpg');
+  background-size: cover;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+}
+
+/* Need to center everything */
+main {
+  justify-content: center;
 }
 
 header {
   text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+.my-posts {
+color: white;
+}
+
+a:active, a:visited, a:link {
+text-decoration: none;
 }
 
 nav li {
@@ -12,8 +31,8 @@ nav li {
 
 nav li a {
   color:#1b89bc;
-  margin-right: 60px;
-  text-decoration: none;
+  margin-right: 4vw;
+  margin-left: -1vw;
 }
 
 .no-button {
@@ -27,36 +46,51 @@ nav li a {
 }
 
 .post-container {
-  border: 3px solid gray;
-  border-radius: 3px;
-  margin: 20px 90px;
-  padding: 10px 30px;
+  /* top right bottom left */
+  margin: 0px 15vw 5vh 15vw;
+  padding: 2vh 4vw;
+  background-color: white;
+  border-radius: 0px;
+  filter: drop-shadow(3px 3px 3px gray);
 }
 
 .post-container h3 {
-  margin-top: -10px;
-  font-size: 14px;
+  font-size: .9rem;
+  width: 50%;
 }
 
 .post-container h4 {
-  margin-top: 50px;
-  font-size: 19px;
+  margin-top: 20vh;
+  font-size: 5rem;
+}
+
+/* displayed comments */
+.comments {
+  /* top right bottom left */
+  margin: 0px 30vw 5vh 30vw;
+  background-color: white;
+  padding: 2vh 2vw;
 }
 
 .comments h4 {
-  margin-left: 90px;
-}
+  font-size: .9rem;
+  }
 
 .comments p {
-  margin-left: 120px;
+font-size: .9rem;
 }
 
 .login-page {
   text-align: center;
 }
 
+/* for both login and sign up */
 .section-div {
-  margin: 0px 60vh 50px 60vh;
+  /* top right bottom left */
+  margin: 0px 30vw 5vh 30vw;
+  background-color: white;
+  padding-bottom: 5vh;
+  padding-top: 1vh;
 }
 
 .form-group p {
@@ -95,18 +129,30 @@ nav li a {
   text-align: center;
 }
 
+/* to add a comment */
 .comment-box-div {
+  margin: 0px 35vw 5vh 35vw;
+  background-color: white;
   text-align: center;
 }
 
-.comment-box-div input {
-  width: 300px;
-  height: 100px;
-  margin-bottom: 10px;
+.comment-box-div h3 {
+  font-size: .8rem;
+  margin-top: 5vh;
+  padding-top: 5vh;
+}
+
+.comment-box-div button {
+margin-bottom: 3vh;
+margin-top: 3vh;
 }
 
 .new-post-form {
+  margin: 0px 20vw 3vh 20vw;
   text-align: center;
+  background-color: white;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
 }
 
 #post-title-input {
@@ -123,7 +169,16 @@ nav li a {
 }
 
 .edit-post-form {
+  margin: 0px 20vw 3vh 20vw;
   text-align: center;
+  background-color: white;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
 }
 
 .two-buttons {
