@@ -147,6 +147,10 @@ margin-bottom: 3vh;
 margin-top: 3vh;
 }
 
+.login-to-comment {
+  color:#1b89bc;
+}
+
 .new-post-form {
   margin: 0px 20vw 3vh 20vw;
   text-align: center;
@@ -156,12 +160,12 @@ margin-top: 3vh;
 }
 
 #post-title-input {
-  width: 200px;
+  width: 30vw;
 }
 
 #post-contents-input{
-  height: 200px;
-  width: 400px;
+  height: 30vh;
+  width: 40vw;
 }
 
 .submitting-button {
@@ -184,3 +188,37 @@ textarea {
 .two-buttons {
   display: inline-flex;
 }
+
+/* Mobile*/
+@media screen 
+and (min-width : 250px) 
+and (max-width : 440px) {
+    body {
+      height: 100vh;
+    }
+    .post-container {
+      margin: 1vh 2vw;
+    }
+    .comments {
+      margin: 2vh 2vw;
+    }
+    .section-div {
+      margin: 2vh 2vw;
+    }
+    .edit-post-form {
+      margin: 2vh 2vw;
+    }
+    .new-post-form {
+      margin: 2vh 2vw;
+    }
+    #post-title-input {
+      width: 60vw;
+    }
+    
+    #post-contents-input{
+      height: 30vh;
+      width: 70vw;
+      margin-bottom: 5vh;
+    }
+
+    }

@@ -68,11 +68,15 @@ The JSON documents include:
 * seed data for users, posts, and comments
 
 
-## Languages
+## Languages & Tech
 - JavaScript
 - HTML
 - CSS
-- Handlebars
+- Express.js and Express Handlebars
+- Node.js
+- Bcrypt
+- MySql
+- Sequelize
 
 
 ## Links
