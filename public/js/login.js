@@ -39,7 +39,7 @@ const signupFormHandler = async (event) => {
     if (response.ok) {
       document.location.replace('/dashboard');
     } else {
-      alert(response.statusText);
+      alert('Check that you have included a full email address and the password is 8 characters.');
     }
   }
 };
