@@ -82,7 +82,7 @@ The JSON documents include:
 ## Links
 * [Deployed Application](https://tech-blog-001.herokuapp.com/)
 
-* [Repository](https://github.com/villettec/M14C-Tech_Blog)
+* [Repository](https://github.com/villette0/M14C-Tech_Blog)
 
 ## Screenshots)
 ![image](./assets/images/readme-screenshot.png)
