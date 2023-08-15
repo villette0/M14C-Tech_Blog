@@ -86,8 +86,3 @@ The JSON documents include:
 
 ## Screenshots)
 ![image](./assets/images/readme-screenshot.png)
-
-## Credit
-Villette Comfort
-
-villette@live.com
